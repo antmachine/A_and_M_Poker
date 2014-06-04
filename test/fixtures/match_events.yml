@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  match_id: 1
+  seat_id: 1
+  bet_cents: 1
+
+two:
+  match_id: 1
+  seat_id: 1
+  bet_cents: 1

@@ -8,7 +8,7 @@
 </head>
 <body>
 	<% if !@user.nil? %>
-		<div>
+		<div style="border-bottom: thin solid black; margin-bottom: 1em;">
 			Welcome <%= @user.user_name %>, you currently have <%= @user.user_wallet_cents %> available to play with. <%= link_to("Logout", :controller => :matches, :action => :logout) %>
 		</div>
 	<% end %>

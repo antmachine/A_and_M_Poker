@@ -1,8 +1,9 @@
 class MatchesController < ApplicationController
 	before_action :require_login, except: [:login]
 	def index
+	end
 
-	
+	def play
 	end
 
 	def login
