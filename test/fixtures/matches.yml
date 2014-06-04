@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pot_cents: 1
+  card1: MyString
+  card2: MyString
+  card3: MyString
+  card4: MyString
+  card5: MyString
+  active_seat_id: 1
+  num_cards_showing: 1
+
+two:
+  pot_cents: 1
+  card1: MyString
+  card2: MyString
+  card3: MyString
+  card4: MyString
+  card5: MyString
+  active_seat_id: 1
+  num_cards_showing: 1
