@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140604045325) do
+ActiveRecord::Schema.define(version: 20140604050337) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -25,6 +25,18 @@ ActiveRecord::Schema.define(version: 20140604045325) do
     t.string   "card5",             limit: 2
     t.integer  "active_seat_id"
     t.integer  "num_cards_showing"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "seats", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "match_id"
+    t.string   "card1",           limit: 2
+    t.string   "card2",           limit: 2
+    t.integer  "user_pot_cents"
+    t.integer  "bet_short_cents"
+    t.integer  "position"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

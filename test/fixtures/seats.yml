@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  match_id: 1
+  card1: MyString
+  card2: MyString
+  user_pot_cents: 1
+  bet_short_cents: 1
+  position: 1
+
+two:
+  user_id: 1
+  match_id: 1
+  card1: MyString
+  card2: MyString
+  user_pot_cents: 1
+  bet_short_cents: 1
+  position: 1
