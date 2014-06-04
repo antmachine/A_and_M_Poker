@@ -7,6 +7,11 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<% if !@user.nil? %>
+		<div>
+			Welcome <%= @user.user_name %>, you currently have <%= @user.user_wallet_cents %> available to play with. <%= link_to("Logout", :controller => :matches, :action => :logout) %>
+		</div>
+	<% end %>
 
 <%= yield %>
 
