@@ -4,6 +4,15 @@ class MatchesController < ApplicationController
 	end
 
 	def play
+		# Join the match
+		@match = Match.find_and_join_available_match(@user)
+	end
+
+	def in_game_ajax
+		client_json_string = request.POST[:ajax_json_data]
+		client_json = JSON.parse client_json_string
+		json_response = Match.process_client_json(client_json, @user)
+		render json: json_response
 	end
 
 	def login
